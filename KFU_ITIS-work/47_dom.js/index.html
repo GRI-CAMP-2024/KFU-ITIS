@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.min.css" />
+     <title>DOM.LESSON-47</title>
+  </head>
+  <body class="bo">    
+    <h1>7. Работа с формой</h1>
+
+    <form action="" class="form" id="form">
+      <p>
+        <label for="text">
+          <input
+            type="text"
+            placeholder="NAME:"
+            size="10"
+            autofocus
+            name="login"
+            id="text"
+          />
+        </label>
+      </p>
+      <p>
+        <label for="number">
+          <input
+            type="tel"
+            placeholder="PHONE:"
+            maxlength="11"
+            tab="2"
+            name="tel"
+          />
+        </label>
+      </p>
+      <p>
+        <input type="date" name="date" tab="3" />
+      </p>
+      <p class="radio__p">
+        <label for="radio1">
+          <span>BEGINNER</span>
+          <input
+            type="radio"
+            id="radio1"
+            name="radio"
+            tab="4"
+            value="BEGINNER"
+          />
+        </label>
+        <label for="radio2">
+          <span>JUNIOR</span>
+          <input type="radio" id="radio2" name="radio" tab="5" value="JUNIOR" />
+        </label>
+        <label for="radio3">
+          <span>MIDDLE</span>
+          <input type="radio" id="radio3" name="radio" tab="6" value="MIDDLE" />
+        </label>
+      </p>
+      <p>
+        <select name="select" tab="7">
+          <option value="" selected>--LANGUAGES--</option>
+          <option value="js">JAVASCRIPT</option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="react">REACT</option>
+        </select>
+      </p>
+      <p>
+        <label for="checkbox">
+          <input type="checkbox" name="checkbox" tab="8" />
+          <span>personal agreement</span>
+        </label>
+      </p>
+      <p>
+        <input type="submit" name="submit" value="SUBMIT" tab="7" />
+      </p>
+    </form>
+
+    <script src="./47_dom.js"></script>
+  </body>
+</html>
